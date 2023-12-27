@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1703709958
+main.tscn::PackedScene::643494649271125607::1703709734::0::1::::<><>::uid://tye3cgpds4kk::::res://Images/placeholder_background.jpg<>uid://du1levjgplnhx::::res://Scenes/right_char.tscn
+right_char.gd::GDScript::-1::1703709672::0::1::::<>Node2D<>::
+::res://Images/::1703705238
+icon.svg::CompressedTexture2D::2541378927187737411::1703699428::1703700977::1::::<><>::
+placeholder_background.jpg::CompressedTexture2D::1383426080422261362::1703700982::1703700993::1::::<><>::
+::res://Images/p/::1703705248
+p_center.png::CompressedTexture2D::5163025148055418194::1703705100::1703705248::1::::<><>::
+p_down.png::CompressedTexture2D::3081578519292703006::1703705121::1703705248::1::::<><>::
+p_left.png::CompressedTexture2D::6232986790363876395::1703705147::1703705248::1::::<><>::
+p_right.png::CompressedTexture2D::2652050666628538486::1703705182::1703705248::1::::<><>::
+p_up.png::CompressedTexture2D::5139937185662928164::1703705038::1703705248::1::::<><>::
+::res://Scenes/::1703709947
+right_char.tscn::PackedScene::8617388892728253697::1703709947::0::1::::<><>::res://right_char.gd<>uid://cftajf7vbun3w::::res://Images/p/p_center.png<>uid://bj50fbcsl87xy::::res://Images/p/p_down.png<>uid://cu2km8l0cxuqd::::res://Images/p/p_left.png<>uid://bd1w5fnbj3fek::::res://Images/p/p_right.png<>uid://cfh3aq0wnartk::::res://Images/p/p_up.png
+::res://Scripts/::1703709580

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://jfyi64mjl4nr"]
+
+[ext_resource type="Texture2D" uid="uid://tye3cgpds4kk" path="res://Images/placeholder_background.jpg" id="1_ngghu"]
+[ext_resource type="PackedScene" uid="uid://du1levjgplnhx" path="res://Scenes/right_char.tscn" id="2_gl4e5"]
+
+[node name="Main" type="Node"]
+
+[node name="Background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ngghu")
+expand_mode = 1
+
+[node name="Character" parent="." instance=ExtResource("2_gl4e5")]
+position = Vector2(915, 325)
+scale = Vector2(0.87, 0.87)

@@ -1,3 +1,6 @@
 res://Scenes/right_char.tscn
 res://main.tscn
 res://right_char.gd
+res://Scenes/left_char.tscn
+res://Scripts/left_char.gd
+res://Scripts/right_char.gd

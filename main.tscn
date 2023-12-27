@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://jfyi64mjl4nr"]
+[gd_scene load_steps=4 format=3 uid="uid://jfyi64mjl4nr"]
 
 [ext_resource type="Texture2D" uid="uid://tye3cgpds4kk" path="res://Images/placeholder_background.jpg" id="1_ngghu"]
 [ext_resource type="PackedScene" uid="uid://du1levjgplnhx" path="res://Scenes/right_char.tscn" id="2_gl4e5"]
+[ext_resource type="PackedScene" uid="uid://b7x5lj0ksekja" path="res://Scenes/left_char.tscn" id="3_5hbsr"]
 
 [node name="Main" type="Node"]
 
@@ -14,6 +15,10 @@ grow_vertical = 2
 texture = ExtResource("1_ngghu")
 expand_mode = 1
 
-[node name="Character" parent="." instance=ExtResource("2_gl4e5")]
-position = Vector2(915, 325)
-scale = Vector2(0.87, 0.87)
+[node name="Left Character" parent="." instance=ExtResource("2_gl4e5")]
+position = Vector2(850, 323)
+scale = Vector2(0.8, 0.8)
+
+[node name="Right Character" parent="." instance=ExtResource("3_5hbsr")]
+position = Vector2(302, 323)
+scale = Vector2(0.8, 0.8)

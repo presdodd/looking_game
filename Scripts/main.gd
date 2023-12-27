@@ -21,11 +21,13 @@ func _on_countdown_timer_timeout():
 	else:
 		left_character.actionable = false
 		right_character.actionable = false
+		if left_character.animationLabel == right_character.animationLabel:
+			print("WINNER")
 	countdown_label.text = str(countdownNum)
+	
 
 func _on_round_timer_timeout():
 	left_character.actionable = true
 	right_character.actionable = true
 	countdownNum = 5
 	countdown_label.text = str(countdownNum)
-	

@@ -55,7 +55,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Right Head:position")
+tracks/0/path = NodePath("Left Head:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -72,7 +72,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Right Head:position")
+tracks/0/path = NodePath("Left Head:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -91,11 +91,11 @@ _data = {
 [node name="Character" type="Node2D"]
 script = ExtResource("1_b6eie")
 
-[node name="Right Head" type="AnimatedSprite2D" parent="."]
+[node name="Left Head" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_m2skv")
 animation = &"center"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Right Head"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Left Head"]
 root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_tb2h5")

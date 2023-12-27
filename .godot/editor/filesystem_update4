@@ -1,6 +1,7 @@
-res://Scenes/right_char.tscn
 res://main.tscn
-res://right_char.gd
+res://Scenes/right_char.tscn
 res://Scenes/left_char.tscn
-res://Scripts/left_char.gd
+res://Scripts/Countdown Label.gd
+res://Scripts/main.gd
 res://Scripts/right_char.gd
+res://Scripts/left_char.gd

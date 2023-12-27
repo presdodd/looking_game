@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://jfyi64mjl4nr"]
+[gd_scene load_steps=6 format=3 uid="uid://jfyi64mjl4nr"]
 
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_mijqe"]
 [ext_resource type="Texture2D" uid="uid://tye3cgpds4kk" path="res://Images/placeholder_background.jpg" id="1_ngghu"]
 [ext_resource type="PackedScene" uid="uid://du1levjgplnhx" path="res://Scenes/right_char.tscn" id="2_gl4e5"]
 [ext_resource type="PackedScene" uid="uid://b7x5lj0ksekja" path="res://Scenes/left_char.tscn" id="3_5hbsr"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_ypy3j"]
+font_size = 100
+font_color = Color(0.666667, 0.690196, 0.262745, 1)
+
 [node name="Main" type="Node"]
+script = ExtResource("1_mijqe")
 
 [node name="Background" type="TextureRect" parent="."]
 anchors_preset = 15
@@ -22,3 +28,40 @@ scale = Vector2(0.8, 0.8)
 [node name="Right Character" parent="." instance=ExtResource("3_5hbsr")]
 position = Vector2(302, 323)
 scale = Vector2(0.8, 0.8)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Countdown Label" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -21.0
+offset_right = 20.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "5"
+label_settings = SubResource("LabelSettings_ypy3j")
+
+[node name="Countdown Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="Round Timer" type="Timer" parent="."]
+wait_time = 6.0
+autostart = true
+
+[connection signal="timeout" from="Countdown Timer" to="." method="_on_countdown_timer_timeout"]
+[connection signal="timeout" from="Countdown Timer" to="UI/Countdown Label" method="_on_countdown_timer_timeout"]
+[connection signal="timeout" from="Round Timer" to="." method="_on_round_timer_timeout"]
+[connection signal="timeout" from="Round Timer" to="UI/Countdown Label" method="_on_round_timer_timeout"]

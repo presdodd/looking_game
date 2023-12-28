@@ -5,6 +5,10 @@ var countdownNum = 5
 @onready var left_character = $"Left Character"
 @onready var right_character = $"Right Character"
 
+# 0 is left character 1 is right character
+# should refactor later
+var leader = 1
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -21,6 +25,7 @@ func _on_countdown_timer_timeout():
 	else:
 		left_character.actionable = false
 		right_character.actionable = false
+		# Both are looking the same way
 		if left_character.animationLabel == right_character.animationLabel:
 			print("WINNER")
 	countdown_label.text = str(countdownNum)
@@ -31,3 +36,16 @@ func _on_round_timer_timeout():
 	right_character.actionable = true
 	countdownNum = 5
 	countdown_label.text = str(countdownNum)
+	print($"Right Character/LeaderParticles".emitting)
+	print(leader)
+
+	# change who is leader
+	if leader == 1:
+		$"Right Character/LeaderParticles".emitting = false
+		$"Left Character/LeaderParticles".emitting = true
+		leader = 0
+	elif leader == 0:
+		$"Left Character/LeaderParticles".emitting = false
+		$"Right Character/LeaderParticles".emitting = true
+		leader = 1
+	

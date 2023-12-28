@@ -1,5 +1,5 @@
 extends Node2D
-@onready var right_head = $"Right Head"
+@onready var right_head = $"RightHead"
 
 var actionable = true
 var animationLabel = "center"
@@ -21,3 +21,5 @@ func _process(delta):
 		
 	right_head.animation = animationLabel
 
+func setEmitParticles(boolean):
+	$LeaderParticles.emitting = boolean

@@ -7,7 +7,7 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_ypy3j"]
 font_size = 100
-font_color = Color(0.666667, 0.690196, 0.262745, 1)
+font_color = Color(0.968627, 0.894118, 0.145098, 1)
 
 [node name="Main" type="Node"]
 script = ExtResource("1_mijqe")
@@ -21,11 +21,11 @@ grow_vertical = 2
 texture = ExtResource("1_ngghu")
 expand_mode = 1
 
-[node name="Left Character" parent="." instance=ExtResource("2_gl4e5")]
+[node name="Right Character" parent="." instance=ExtResource("2_gl4e5")]
 position = Vector2(850, 323)
 scale = Vector2(0.8, 0.8)
 
-[node name="Right Character" parent="." instance=ExtResource("3_5hbsr")]
+[node name="Left Character" parent="." instance=ExtResource("3_5hbsr")]
 position = Vector2(302, 323)
 scale = Vector2(0.8, 0.8)
 

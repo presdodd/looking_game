@@ -1,5 +1,5 @@
-res://Scenes/right_char.tscn
-res://Shaders/leader_char.gdshader
-res://Scenes/left_char.tscn
 res://main.tscn
+res://Shaders/leader_char.gdshader
+res://Scenes/right_char.tscn
+res://Scenes/left_char.tscn
 res://Scripts/main.gd

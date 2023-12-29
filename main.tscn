@@ -61,18 +61,20 @@ text = "5"
 label_settings = SubResource("LabelSettings_ypy3j")
 
 [node name="LeftScore" type="Label" parent="UI"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -383.0
-offset_top = 227.0
-offset_right = -222.0
-offset_bottom = 296.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 0
+offset_left = 165.0
+offset_top = 550.0
+offset_right = 483.0
+offset_bottom = 619.0
+text = "Score: 0"
+label_settings = SubResource("LabelSettings_2mili")
+
+[node name="RightScore" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 724.0
+offset_top = 550.0
+offset_right = 991.0
+offset_bottom = 619.0
 text = "Score: 0"
 label_settings = SubResource("LabelSettings_2mili")
 

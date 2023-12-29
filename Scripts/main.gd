@@ -7,6 +7,7 @@ var countdownNum = 5
 @onready var countdown_timer = $"Countdown Timer"
 @onready var round_timer = $"Round Timer"
 @onready var left_score_label = $UI/LeftScore
+@onready var right_score_label = $UI/RightScore
 
 
 # 0 is left character 1 is right character
@@ -48,13 +49,16 @@ func _on_round_timer_timeout():
 	countdownNum = 5
 	countdown_label.text = str(countdownNum)
 
-	
+
 func winning_round():
 	if leader == 0:
 		left_score += 1
 		left_score_label.text = "Score: %s" % left_score
 	else:
 		right_score += 1
+		right_score_label.text = "Score: %s" % right_score
+
+
 func losing_round():
 	# change who is leader
 	if leader == 1:
@@ -65,4 +69,4 @@ func losing_round():
 		$"Left Character/LeaderParticles".emitting = false
 		$"Right Character/LeaderParticles".emitting = true
 		leader = 1
-	
+
